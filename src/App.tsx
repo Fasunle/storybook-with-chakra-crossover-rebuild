@@ -1,10 +1,11 @@
-import logo from './assets/crossover.svg';
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Center, Image, Text } from '@chakra-ui/react';
 
 function App() {
   return (
     <Box textAlign={'center'}>
-      <img src={logo} alt='Crossover' height={'200px'} />
+      <Center my={'10'}>
+        <Image src='/assets/crossover.svg' alt="crossover logo" h={200} />
+      </Center>
       <Text fontSize={'2xl'}>
         Crossover Replicate with Reactjs + Storybook + Chakra + TypeScript
       </Text>
