@@ -11,10 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3.1.0
-        with:
-          fetch-depth: 2
-      - run: git checkout HEAD^
-        
       - run: npm upgrade npm
         
       - name: Install project dependences
